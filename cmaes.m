@@ -21,7 +21,7 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
   while counteval < stopeval
       numberOfLoops = numberOfLoops + 1;
       % Generate and evaluate lambda offspring
-      for k=1:lambda,
+      for k=1:lambda
           arx(:,k) = xmean + sigma * B * (D .* randn(N,1)); % m + sig * Normal(0,C) 
           arfitness(k) = feval(strfitnessfct, arx(:,k)); % objective function call
           counteval = counteval+1;
@@ -30,20 +30,16 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
       % Sort by fitness and compute weighted mean into xmean
       [arfitness, arindex, xold, xmean] = loop_sort_and_weight(arfitness, xmean, arx, weights, mu);
       
-    
       % Cumulation: Update evolution paths
       [ps, hsig, pc] = loop_update_evolution_paths(N, cs, ps, mueff, invsqrtC, xmean, xold, sigma, counteval, lambda, chiN, cc, pc);
       
-
       % Adapt covariance matrix C
-      artmp = (1/sigma) * (arx(:,arindex(1:mu))-repmat(xold,1,mu));
-      C = (1-c1-cmu) * C ...                  % regard old matrix  
-           + c1 * (pc*pc' ...                 % plus rank one update
-                   + (1-hsig) * cc*(2-cc) * C) ... % minor correction if hsig==0
-           + cmu * artmp * diag(weights) * artmp'; % plus rank mu update
-
+      C = loop_adapt_covariance(sigma, arx, arindex, xold, mu, c1, cmu, C, pc, hsig, cc, weights);
+      
       % Adapt step size sigma
-      sigma = sigma * exp((cs/damps)*(norm(ps)/chiN - 1)); 
+      sigma = loop_adapt_sigma(sigma, cs, damps, ps, chiN);
+
+      
     
       % Decomposition of C into B*diag(D.^2)*B' (diagonalization)
       if counteval - eigeneval > lambda/(c1+cmu)/N/10  % to achieve O(N^2)
