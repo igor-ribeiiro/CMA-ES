@@ -8,14 +8,16 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
   stopfitness = 1e-10;  % stop if fitness < stopfitness (minimization)
   stopeval = 1e3*N^2;   % stop after stopeval number of function evaluations
   
+  
   % Initial setup for the algorithm
-  addpath(genpath('setup'))
+  addpath(genpath('setup'));
   [lambda, mu, weights, mueff, cc, cs, c1, cmu, damps, pc, ps, B, D, C, invsqrtC, eigeneval, chiN] = setup(N);
 
   % -------------------- Generation Loop --------------------------------
-  counteval = 0;  % the next 40 lines contain the 20 lines of interesting code 
+  % the next 40 lines contain the 20 lines of interesting code 
+  counteval = 0; % Is the number of function evaluations. Is limited by stopeval
   numberOfLoops = 0; % How many loops on the script
-  
+  addpath(genpath('loop'))
   while counteval < stopeval
       numberOfLoops = numberOfLoops + 1;
       % Generate and evaluate lambda offspring
@@ -24,18 +26,14 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
           arfitness(k) = feval(strfitnessfct, arx(:,k)); % objective function call
           counteval = counteval+1;
       end
-    
+      
       % Sort by fitness and compute weighted mean into xmean
-      [arfitness, arindex] = sort(arfitness); % minimization
-      xold = xmean;
-      xmean = arx(:,arindex(1:mu))*weights;   % recombination, new mean value
+      [arfitness, arindex, xold, xmean] = loop_sort_and_weight(arfitness, xmean, arx, weights, mu);
+      
     
       % Cumulation: Update evolution paths
-      ps = (1-cs)*ps ... 
-            + sqrt(cs*(2-cs)*mueff) * invsqrtC * (xmean-xold) / sigma; 
-      hsig = norm(ps)/sqrt(1-(1-cs)^(2*counteval/lambda))/chiN < 1.4 + 2/(N+1);
-      pc = (1-cc)*pc ...
-            + hsig * sqrt(cc*(2-cc)*mueff) * (xmean-xold) / sigma;
+      [ps, hsig, pc] = loop_update_evolution_paths(N, cs, ps, mueff, invsqrtC, xmean, xold, sigma, counteval, lambda, chiN, cc, pc);
+      
 
       % Adapt covariance matrix C
       artmp = (1/sigma) * (arx(:,arindex(1:mu))-repmat(xold,1,mu));
