@@ -8,24 +8,10 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
   stopfitness = 1e-10;  % stop if fitness < stopfitness (minimization)
   stopeval = 1e3*N^2;   % stop after stopeval number of function evaluations
   
-  
+  % Initial setup for the algorithm
   addpath(genpath('setup'))
-  % Strategy parameter setting: Selection
-  [lambda, mu, weights, mueff] = setup_selection(N);
+  [lambda, mu, weights, mueff, cc, cs, c1, cmu, damps, pc, ps, B, D, C, invsqrtC, eigeneval, chiN] = setup(N);
 
-  % Strategy parameter setting: Adaptation
-  [cc, cs, c1, cmu, damps] = setup_adaptation(N, mueff);
-  
-
-  % Initialize dynamic (internal) strategy parameters and constants
-  pc = zeros(N,1); ps = zeros(N,1);   % evolution paths for C and sigma
-  B = eye(N,N);                       % B defines the coordinate system
-  D = ones(N,1);                      % diagonal D defines the scaling
-  C = B * diag(D.^2) * B';            % covariance matrix C
-  invsqrtC = B * diag(D.^-1) * B';    % C^-1/2 
-  eigeneval = 0;                      % track update of B and D
-  chiN=N^0.5*(1-1/(4*N)+1/(21*N^2));  % expectation of 
-                                      %   ||N(0,I)|| == norm(randn(N,1)) 
   % -------------------- Generation Loop --------------------------------
   counteval = 0;  % the next 40 lines contain the 20 lines of interesting code 
   numberOfLoops = 0; % How many loops on the script
