@@ -11,7 +11,7 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
   
   % Initial setup for the algorithm
   addpath(genpath('setup'));
-  [lambda, mu, weights, mueff, cc, cs, c1, cmu, damps, pc, ps, B, D, C, invsqrtC, eigeneval, chiN] = setup(N);
+  [lambda, mu, weights, mueff, cc, cs, c1, cmu, damps, pc, ps, B, D, C, invsqrtC, eigeneval, chiN, arx, arfitness] = setup(N);
 
   % -------------------- Generation Loop --------------------------------
   % the next 40 lines contain the 20 lines of interesting code 
@@ -20,12 +20,11 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
   addpath(genpath('loop'))
   while counteval < stopeval
       numberOfLoops = numberOfLoops + 1;
+      
+      
+      
       % Generate and evaluate lambda offspring
-      for k=1:lambda
-          arx(:,k) = xmean + sigma * B * (D .* randn(N,1)); % m + sig * Normal(0,C) 
-          arfitness(k) = feval(strfitnessfct, arx(:,k)); % objective function call
-          counteval = counteval+1;
-      end
+      [arx, arfitness, counteval] = loop_evaluate_function(lambda, xmean, sigma, B, D, N, strfitnessfct, counteval, arx, arfitness);
       
       % Sort by fitness and compute weighted mean into xmean
       [arfitness, arindex, xold, xmean] = loop_sort_and_weight(arfitness, xmean, arx, weights, mu);
@@ -38,9 +37,7 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
       
       % Adapt step size sigma
       sigma = loop_adapt_sigma(sigma, cs, damps, ps, chiN);
-
       
-    
       % Decomposition of C into B*diag(D.^2)*B' (diagonalization)
       if counteval - eigeneval > lambda/(c1+cmu)/N/10  % to achieve O(N^2)
           eigeneval = counteval;
@@ -62,7 +59,3 @@ function xmin=cmaes   % (mu/mu_w, lambda)-CMA-ES
   xmin = arx(:, arindex(1))'; % Return best point of last iteration.
                              % Notice that xmean is expected to be even
                              % better.
-% ---------------------------------------------------------------  
-function f=frosenbrock(x)
-    if size(x,1) < 2 error('dimension must be greater one'); end
-    f = 100*sum((x(1:end-1).^2 - x(2:end)).^2) + sum((x(1:end-1)-1).^2);
