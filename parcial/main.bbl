@@ -16,63 +16,6 @@
   {}
 \endgroup
 
-\entry{orozcomaquinas}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Coelho}{C.}%
-     {Mateus Menezes~Azevedo}{M.~M.~A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CMMA1}
-  \strng{fullhash}{CMMA1}
-  \field{title}{M{\'a}quinas de Estados Finitos}
-\endentry
-
-\entry{decision_tree}{inbook}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Russel}{R.}%
-     {S.}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Norvig}{N.}%
-     {P.}{P.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Prentice Hall}%
-  }
-  \strng{namehash}{RSNP1}
-  \strng{fullhash}{RSNP1}
-  \field{edition}{3}
-  \field{pages}{697\bibrangedash 707}
-  \field{title}{Artificial Intelligence: A Modern Approach}
-  \field{volume}{3}
-  \field{year}{2009}
-\endentry
-
-\entry{behavior_tree_robotics}{thesis}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Colledanchise}{C.}%
-     {Michele}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CM1}
-  \strng{fullhash}{CM1}
-  \field{title}{Behavior Trees in Robotics}
-  \list{institution}{1}{%
-    {KTH Royal Institute of Technology}%
-  }
-  \field{type}{phdthesis}
-  \field{month}{02}
-  \field{year}{2016}
-\endentry
-
 \entry{cox1988c++}{inproceedings}{}
   \name{author}{1}{}{%
     {{}%
@@ -94,102 +37,72 @@
   \field{year}{1988}
 \endentry
 
-\entry{tasinaffo_ic}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Coelho}{C.}%
-     {Mateus Menezes~Azevedo}{M.~M.~A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tasinaffo}{T.}%
-     {Paulo~Marcelo}{P.~M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CMMATPM1}
-  \strng{fullhash}{CMMATPM1}
-  \field{title}{Desenvolvimento de Visão Computacional do Robô Humanoide}
-  \field{year}{2016}
-\endentry
-
 \entry{cbr2008}{misc}{}
   \field{note}{http://www.cbrobotica.
   org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf}
+  \field{year}{2008}
 \endentry
 
-\entry{franzoni_rrt}{thesis}{}
-  \name{author}{1}{}{%
+\entry{zickler2009ssl}{inproceedings}{}
+  \name{author}{5}{}{%
     {{}%
-     {Okuyama}{O.}%
-     {Igor~Franzoni}{I.~F.}%
+     {Zickler}{Z.}%
+     {Stefan}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Laue}{L.}%
+     {Tim}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Birbach}{B.}%
+     {Oliver}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wongphati}{W.}%
+     {Mahisorn}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Veloso}{V.}%
+     {Manuela}{M.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{OIF1}
-  \strng{fullhash}{OIF1}
-  \field{title}{TRAJECTORY PLANNING CONSIDERING ACCELERATION LIMITS FOR AN
-  AUTONOMOUS SOCCER PLAYER}
-  \list{institution}{1}{%
-    {Instituto Tecnol\'{o}gico de Aeron\'{a}utica}%
+  \list{organization}{1}{%
+    {Springer}%
   }
-  \field{type}{Trabalho de Gradua\c{c}\~{a}o}
-  \field{year}{2017}
+  \strng{namehash}{ZSLTBO+1}
+  \strng{fullhash}{ZSLTBOWMVM1}
+  \field{booktitle}{Robot Soccer World Cup}
+  \field{pages}{425\bibrangedash 436}
+  \field{title}{SSL-vision: The shared vision system for the RoboCup Small Size
+  League}
+  \field{year}{2009}
+\endentry
+
+\entry{guide1998mathworks}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Guide}{G.}%
+     {MATLAB~User’s}{M.~U.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GMU1}
+  \strng{fullhash}{GMU1}
+  \field{pages}{333}
+  \field{title}{The mathworks}
+  \field{volume}{5}
+  \field{journaltitle}{Inc., Natick, MA}
+  \field{year}{1998}
 \endentry
 
 \entry{ssl}{misc}{}
   \field{note}{http://www.cbrobotica.
   org/wp-content/uploads/2014/03/VerySmall2008\_en.pdf}
-\endentry
-
-\entry{NEUIslanders_ssl}{misc}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Abiyev}{A.}%
-     {Rahib~H.}{R.~H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Bektas}{B.}%
-     {}{}%
-     {Şenol}{�.}%
-     {}{}}%
-    {{}%
-     {Akkaya}{A.}%
-     {Nurullah}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Aytac}{A.}%
-     {Ersin}{E.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{ARHB�AN+1}
-  \strng{fullhash}{ARHB�ANAE1}
-  \field{howpublished}{Robocup}
-  \field{title}{NEUIslanders 2017 Team Description Paper}
-  \field{year}{2017}
-\endentry
-
-\entry{west2001introduction}{book}{}
-  \true{moreauthor}
-  \name{author}{1}{}{%
-    {{}%
-     {West}{W.}%
-     {Douglas~Brent}{D.~B.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Prentice hall Upper Saddle River}%
-  }
-  \strng{namehash}{WDB+1}
-  \strng{fullhash}{WDB+1}
-  \field{chapter}{2}
-  \field{title}{Introduction to graph theory}
-  \field{volume}{2}
-  \field{year}{2001}
 \endentry
 
 \entry{hunt2013gang}{incollection}{}
@@ -209,68 +122,6 @@
   \field{pages}{135\bibrangedash 136}
   \field{title}{Gang of four design patterns}
   \field{year}{2013}
-\endentry
-
-\entry{egly2005decision}{book}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Egly}{E.}%
-     {Uwe}{U.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Novak}{N.}%
-     {Gregor}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Weber}{W.}%
-     {Daniel}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {na}%
-  }
-  \strng{namehash}{EUNGWD1}
-  \strng{fullhash}{EUNGWD1}
-  \field{title}{Decision making for MiroSOT soccer playing robots}
-  \field{year}{2005}
-\endentry
-
-\entry{delaunay34}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Delaunay}{D.}%
-     {Boris}{B.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{DB1}
-  \strng{fullhash}{DB1}
-  \field{pages}{793\bibrangedash 800}
-  \field{title}{Sur la sph\'{e}re vide}
-  \field{volume}{6}
-  \field{journaltitle}{Bulletin de l'Académie des Sciences de l'URSS}
-  \field{year}{1934}
-\endentry
-
-\entry{voronoi08}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Voronoi}{V.}%
-     {Georgy}{G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{VG1}
-  \strng{fullhash}{VG1}
-  \field{pages}{97\bibrangedash 178}
-  \field{title}{Nouvelles applications des paramètres continus à la théorie
-  des formes quadratiques}
-  \field{volume}{133}
-  \field{journaltitle}{Journal für die Reine und Angewandte Mathematik}
-  \field{year}{1908}
 \endentry
 
 \entry{akiyama2007multi}{inproceedings}{}

@@ -80,7 +80,7 @@ O método  foi mostrado efetivo na LARC, ocorrida entre os dias 7 a 11 de novemb
 \section{Descrição do Problema}
 \label{secao:enunciado_problema}
 
-No contexto do futebol de robôs, a tomada de decisão traz muitos desafios. A estratégia consiste no fato de se implementar um algoritmo que consiga utilizar o planejamento de trajetórias do robô da melhor maneira possível. Isso nos traz a um desafio de nível de abstração mais alto: decidir qual a melhor decisão que cada robô pode tomar em um certo momento considerando limitações de trajetórias possíveis de serem seguidas. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado. 
+No contexto do futebol de robôs, o ajuste de parâmetros traz muitos desafios. A otimização consiste no fato de se implementar um algoritmo que encontre parâmetros desejados de forma automática e em tempo hábil, já que as simulações usadas são computacionamente custosas. A figura \ref{fig:vss_ele} mostra a placa eletrônica do robô utilizado. 
 
 \begin{figure}[H]
 	\centering
@@ -96,7 +96,7 @@ Nesse projeto, trabalhou-se com os robôs da competição IEEE Very Small Size (
    \caption{Robôs da ITAndroids da categoria IEEE VSSS.} \label{fig:vss}
 \end{figure}
 
-A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão computacional utilizada pela equipe ITAndroids pode ser encontrada com mais detalhes em \cite{tasinaffo_ic} e utiliza uma câmera no topo do campo que repassa informaçãoes para um computador processar, como visto na figura \ref{fig:funcioamento}.
+A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão computacional utilizada pela equipe ITAndroids pode ser encontrada com mais detalhes em \cite{zickler2009ssl} e utiliza uma câmera no topo do campo que repassa informaçãoes para um computador processar, como visto na figura \ref{fig:funcioamento}.
 
 \begin{figure}[H]
 	\centering
@@ -105,9 +105,11 @@ A figura \ref{fig:vss} mostra os robôs usados nas competições. A visão compu
 	\label{fig:funcioamento}
 \end{figure}
 
-Cada robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++, pois é uma linguagem que tem uma velocidade de execução alta e tem escalabilidade descente para um projeto grande. 
+Cada robô foi projetado com duas rodas laterais e duas esferas livres à frente e atrás para manter o equilíbrio. Essa característica o torna um robô diferencial. Ou seja, temos o controle sobre as velocidades linear e angular, mas não é possível mover o robô para os lados. A linguagem utilizada para o projeto foi C++, pois é uma linguagem que tem uma velocidade de execução alta e tem escalabilidade descente para um projeto grande, como estudado em \cite{cox1988c++}. Porém, para a implementação dos algoritmos evolutivos, será usado o programa Matlab\textsuperscript{\textregistered}, que é uma linguagem alto nível para as operações de Álgebra Linear usadas em algoritmos evolutivos, conforme \cite{guide1998mathworks}.
 
-Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. Nesse projeto, será abordado o seguinte problema de estratégia: dada a posição e a velocidade de cada robô no campo, da bola e da direção que os nossos robores estão (não é possível descobrir a posição dos robôs oponentes, pois não sabemos a distribuição de cores que eles usam no seu topo), deve-se escolher qual posição o robô irá, com qual controlador  e qual planejamento de trajetórias utilizar. Deve-se também montar um plano para ações futuras, planejando uma sequência de posições que o robô deve ir para efetuar um gol.
+Nesse contexto, surgem várias questões a serem resolvidas para se ter um time vencedor. 
+
+Nesse projeto, será abordado o seguinte problema de estratégia: dada a posição e a velocidade de cada robô no campo, da bola e da direção que os nossos robores estão (não é possível descobrir a posição dos robôs oponentes, pois não sabemos a distribuição de cores que eles usam no seu topo), deve-se escolher qual posição o robô irá, com qual controlador  e qual planejamento de trajetórias utilizar. Deve-se também montar um plano para ações futuras, planejando uma sequência de posições que o robô deve ir para efetuar um gol.
 
 O algoritmo de estratégia deve executar em tempo de execução de, no máximo, 16 ms para todo o time, que é o tempo de amostragem da câmera. A maior parte desse tempo é gasto com o planejamento de trajetórias usado, que é o Rapidly-exploring Random Tree (RRT). O tempo para cada execução de um RRT é de 1 ms, de acordo com \cite{franzoni_rrt}, limitando a em torno de um limite de doze chamadas do algoritmo por execução completa da estratégia, com uma margem de erro trinta e três porcento. Ressalta-se a importância de não ultrapassar esse tempo máximo, já que se isso acontecer perde-se uma imagem da câmera e o funcionamento do jogo é realizado de forma atrasado.
 
