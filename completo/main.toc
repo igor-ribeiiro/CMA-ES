@@ -1,0 +1,43 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {brazilian}
+\defcounter {refsection}{0}\relax 
+\select@language {brazilian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Resumo do Plano Inicial}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Resumo das Atividades Realizadas}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Descri\IeC {\c c}\IeC {\~a}o do Problema}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Behavior tree}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}N\IeC {\'o} Folha}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2}N\IeC {\'o} composto}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}T\IeC {\'e}cnico}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Pap\IeC {\'e}is}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}Goleiro}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}Principal}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.3}Auxiliar}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Resultados Obtidos}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Pap\IeC {\'e}is}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Goleiro}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2}Principal}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3}Auxiliar}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Agradecimentos}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Bibliografia}{21}

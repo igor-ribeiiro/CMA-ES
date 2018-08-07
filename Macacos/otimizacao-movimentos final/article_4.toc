@@ -1,0 +1,18 @@
+\select@language {portuguese}
+\contentsline {section}{\numberline {1}Resumo do Plano Inicial}{5}{section.1}
+\contentsline {section}{\numberline {2}Resumo das Atividades Realizadas}{5}{section.2}
+\contentsline {section}{\numberline {3}Descri\IeC {\c c}\IeC {\~a}o do Problema}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Problema de Otimiza\IeC {\c c}\IeC {\~a}o}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Representa\IeC {\c c}\IeC {\~a}o dos Movimentos Keyframe}{5}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Keyframe}{5}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Passo de Keyframe}{5}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Movemento Keyframe}{6}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}Movimentos Keyframe}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Framework de Otimiza\IeC {\c c}\IeC {\~a}o}{7}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Cluster}{9}{subsection.3.5}
+\contentsline {section}{\numberline {4}Resultados Obtidos}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Otimiza\IeC {\c c}\IeC {\~o}es feitas}{9}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Movimento de levantar de costas}{9}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Chute}{10}{subsubsection.4.1.2}
+\contentsline {section}{\numberline {5}Conclus\IeC {\~o}es}{13}{section.5}
+\contentsline {section}{\numberline {6}Agradecimentos}{13}{section.6}

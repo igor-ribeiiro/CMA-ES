@@ -1,0 +1,12 @@
+\select@language {portuguese}
+\deactivateaddvspace 
+\contentsline {figure}{\numberline {1}{\ignorespaces Movimento keyframe utilizando interpola\IeC {\c c}\IeC {\~a}po por spline c\IeC {\'u}bica. Cada cor representa a trajet\IeC {\'o}ria de uma junta durante o movimento.\relax }}{7}{figure.caption.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces RoboCup 3D Soccer Simulation com imagens retiradas no Monitor Roboviz.\relax }}{7}{figure.caption.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Diagrama do framework de otimiza\IeC {\c c}\IeC {\~a}o.\relax }}{8}{figure.caption.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Foto do cluster utilizado.\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o dos valores melhores e medianos de cada itera\IeC {\c c}\IeC {\~a}o do algoritmo de otimiza\IeC {\c c}\IeC {\~a}o para o movimento \texttt {StandUpFromBack}.\relax }}{11}{figure.caption.6}
+\contentsline {figure}{\numberline {6}{\ignorespaces Segunda Evolu\IeC {\c c}\IeC {\~a}o dos valores melhores e medianos de cada itera\IeC {\c c}\IeC {\~a}o do algoritmo de otimiza\IeC {\c c}\IeC {\~a}o para o movimento \texttt {StandUpFromBack}.\relax }}{11}{figure.caption.7}
+\contentsline {figure}{\numberline {7}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do movimento \texttt {StandUpFromBack} em quadros.\relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de refer\IeC {\^e}ncia para o campo.\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {9}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o dos valores melhores e medianos de cada itera\IeC {\c c}\IeC {\~a}o do algoritmo de otimiza\IeC {\c c}\IeC {\~a}o para o movimento \texttt {KickRightLeg}.\relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {10}{\ignorespaces Segunda evolu\IeC {\c c}\IeC {\~a}o dos valores melhores e medianos de cada itera\IeC {\c c}\IeC {\~a}o do algoritmo de otimiza\IeC {\c c}\IeC {\~a}o para o movimento \texttt {KickRightLeg} .\relax }}{13}{figure.caption.11}

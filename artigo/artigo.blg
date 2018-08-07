@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: artigo.aux
+The style file: abcm.bst
+Database file #1: bibliografia.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty journal in orozcomaquinas
+You've used 11 entries,
+            3271 wiz_defined-function locations,
+            719 strings with 6561 characters,
+and the built_in function-call counts, 6687 in all, are:
+= -- 555
+> -- 191
+< -- 20
++ -- 74
+- -- 63
+* -- 401
+:= -- 973
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 81
+chr.to.int$ -- 14
+cite$ -- 12
+duplicate$ -- 556
+empty$ -- 553
+format.name$ -- 89
+if$ -- 1394
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 108
+newline$ -- 63
+num.names$ -- 44
+pop$ -- 260
+preamble$ -- 1
+purify$ -- 64
+quote$ -- 0
+skip$ -- 243
+stack$ -- 0
+substring$ -- 300
+swap$ -- 279
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 93
+warning$ -- 1
+while$ -- 49
+width$ -- 0
+write$ -- 150
+(There was 1 warning)
