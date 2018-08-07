@@ -27,45 +27,45 @@ Warning--I didn't find a database entry for "voronoi08"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 9 entries,
+You've used 12 entries,
             6047 wiz_defined-function locations,
-            1176 strings with 9049 characters,
-and the built_in function-call counts, 20009 in all, are:
-= -- 762
-> -- 545
-< -- 153
-+ -- 191
-- -- 190
-* -- 1121
-:= -- 1220
+            1197 strings with 9665 characters,
+and the built_in function-call counts, 30856 in all, are:
+= -- 1280
+> -- 931
+< -- 276
++ -- 343
+- -- 321
+* -- 1857
+:= -- 1825
 add.period$ -- 0
-call.type$ -- 9
-change.case$ -- 68
+call.type$ -- 12
+change.case$ -- 150
 chr.to.int$ -- 34
-cite$ -- 16
-duplicate$ -- 2263
-empty$ -- 2367
-format.name$ -- 313
-if$ -- 4617
+cite$ -- 22
+duplicate$ -- 3447
+empty$ -- 3436
+format.name$ -- 531
+if$ -- 7130
 int.to.chr$ -- 0
-int.to.str$ -- 17
+int.to.str$ -- 26
 missing$ -- 0
-newline$ -- 153
-num.names$ -- 230
-pop$ -- 2616
+newline$ -- 234
+num.names$ -- 411
+pop$ -- 3574
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 182
 quote$ -- 0
-skip$ -- 1173
+skip$ -- 1862
 stack$ -- 0
-substring$ -- 439
-swap$ -- 665
-text.length$ -- 150
+substring$ -- 830
+swap$ -- 1067
+text.length$ -- 222
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 330
+type$ -- 444
 warning$ -- 0
-while$ -- 136
+while$ -- 186
 width$ -- 0
-write$ -- 143
+write$ -- 221
 (There were 9 warnings)

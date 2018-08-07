@@ -16,6 +16,89 @@
   {}
 \endgroup
 
+\entry{koshel2002enhancement}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Koshel}{K.}%
+     {R~John}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Optical Society of America}%
+  }
+  \strng{namehash}{KRJ1}
+  \strng{fullhash}{KRJ1}
+  \field{booktitle}{International Optical Design Conference}
+  \field{pages}{ITuC2}
+  \field{title}{Enhancement of the downhill simplex method of optimization}
+  \field{year}{2002}
+\endentry
+
+\entry{broyden1973local}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Broyden}{B.}%
+     {Charles~George}{C.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dennis~Jr}{D.~J.}%
+     {JE}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mor{\'e}}{M.}%
+     {Jorge~J}{J.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford University Press}%
+  }
+  \strng{namehash}{BCGDJJMJJ1}
+  \strng{fullhash}{BCGDJJMJJ1}
+  \field{number}{3}
+  \field{pages}{223\bibrangedash 245}
+  \field{title}{On the local and superlinear convergence of quasi-Newton
+  methods}
+  \field{volume}{12}
+  \field{journaltitle}{IMA Journal of Applied Mathematics}
+  \field{year}{1973}
+\endentry
+
+\entry{hansen2003reducing}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hansen}{H.}%
+     {Nikolaus}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {M{\"u}ller}{M.}%
+     {Sibylle~D}{S.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koumoutsakos}{K.}%
+     {Petros}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {MIT Press}%
+  }
+  \strng{namehash}{HNMSDKP1}
+  \strng{fullhash}{HNMSDKP1}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 18}
+  \field{title}{Reducing the time complexity of the derandomized evolution
+  strategy with covariance matrix adaptation (CMA-ES)}
+  \field{volume}{11}
+  \field{journaltitle}{Evolutionary computation}
+  \field{year}{2003}
+\endentry
+
 \entry{cox1988c++}{inproceedings}{}
   \name{author}{1}{}{%
     {{}%
